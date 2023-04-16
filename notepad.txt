@@ -1,0 +1,15 @@
+This is the start of a large project to build a proper app/backend for HLH's dashboard.
+
+
+It will do the heavy lifting in terms of analytics and HTTP requests to Cimar API. 
+The dashboard should reach out to this app for pre-made analytics rather than calculating them on the fly. 
+Aside from that it should also be a Cimar-internal admin tool that is queryable and programmatically interactive unlike OpenSearch 
+
+First off, write a script that: for each HLH webhook, create a duplicate that sends data to this API
+Then, for each unique endpoint, create that endpoint to listen for payloads
+
+
+BACKUP Script DONE
+Clone Webhooks and point at listener DONE
+Create endpoints for those listeners TODO
+Store all received payloads. Segregate by day. Cleanse sensitive data.
